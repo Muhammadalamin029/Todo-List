@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    height: 100vh;
+    background-color: rgb(25, 75, 167);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-container {
+    background-color: #1b291079;
+    padding: 20px;
+    border-radius: 30px;
+    color: white;
+}
+
+.todo-container form {
+    position: relative;
+    width: 100%;
+}
+
+.todo-container form input {
+    background-color: cornsilk;
+    width: 99%;
+    height: 30px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.todo-container .button {
+    padding: 5px;
+    background-color: rgb(54, 126, 36);
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    height: 30px;
+    width: 30%;
+}
+
+.todo-container .button:hover {
+    background-color: rgba(54, 126, 36, 0.753);
+}
+
+.todo-container ul {
+    margin: 10px 0;
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+    font-weight: 600;
+    font-family: sans-serif;
+    padding: 5px;
+    margin: 10px;
+    box-shadow: #1b291079;
+    border-radius: 10px;
+    background-color: rgb(156, 215, 233);
+    color: #000;
+}
+
+ul li .fas {
+    position: absolute;
+    right: 0;
+    top: 1px;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    color: #555;
+    cursor: pointer;
+    text-align: center;
+}
+
+ul li .fa {
+    position: absolute;
+    right: 15px;
+    top: 3px;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    color: #555;
+    cursor: pointer;
+    text-align: center;
+}
+
+ul li .fas:hover {
+    color: red;
+}
+
+ul li .fa:hover {
+    color: green;
+}
+
+.marked {
+    background-color: lightgreen;
+    text-decoration: line-through;
+    transition: .2s;
+}
+
+.head {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h6 {
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
